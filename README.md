@@ -6,6 +6,13 @@ Compile and run (from this folder):
     javac -d out $(find src -name "*.java")      # Linux / macOS
     java -cp out Main
 
+Launch the graphical interface (Java Swing):
+
+    java -cp out ui.CodeVaultUI
+
+The graphical and console interfaces use the same `vault/` data files. You can
+continue to launch the original console application with `java -cp out Main`.
+
 Windows (PowerShell):
 
     mkdir out

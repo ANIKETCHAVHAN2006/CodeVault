@@ -1,0 +1,25 @@
+CODEVAULT — MINI PROJECT VIDEO NARRATION
+
+[Introduction]
+Hello. My mini project is called CodeVault. It is a Java console application that helps a user save programming knowledge and revise it later. It stores code examples, plain notes, and terminal commands.
+
+[Project idea]
+Programmers often collect useful examples but later forget where they saved them. CodeVault keeps these items in one searchable place. Each item can have tags and a difficulty level.
+
+[OOP structure]
+The main parent class is Item, and Snippet extends it with shared snippet information and revision behavior. CodeSnippet, NoteSnippet, and CommandSnippet inherit from Snippet. They share common data, but each displays its content differently. This demonstrates inheritance and polymorphism. Private fields with getters and setters demonstrate encapsulation. Interfaces such as Searchable, Exportable, and Revisable describe abilities that snippets support.
+
+[Feature demonstration: add]
+First, the user logs in. On the first run, they create a master password. Then the program loads saved snippets and displays its menu. To add a snippet, the user chooses code, note, or command, enters a title and other details, and types the content. The program assigns it an ID and saves it.
+
+[Feature demonstration: find and manage]
+The user can view, edit, delete, duplicate, sort, or search snippets. Search can use a keyword, language, tag, or difficulty. For example, searching for the tag loops returns snippets tagged loops.
+
+[Feature demonstration: review]
+CodeVault schedules snippets for review. It puts due snippets into a queue, with overdue items first. The user tries to remember the content, reveals it, then rates recall as forgot, hard, or easy. The rating changes how many days pass before the next review.
+
+[Other features]
+The project can import and export text files, create reports and backups, show revision logs, and calculate statistics. It uses files for persistent storage and background threads for periodic autosaving and reminders.
+
+[Conclusion]
+In summary, CodeVault combines useful programming features with object-oriented concepts: classes and objects, encapsulation, inheritance, abstraction, polymorphism, and interfaces. Thank you.
